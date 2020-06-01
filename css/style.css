@@ -1,0 +1,169 @@
+@font-face {
+    font-family: font;
+    src: url('../font/OpenSans-Regular.ttf');
+  }
+html{
+    font-family: font,'Times New Roman', Times, serif !important;
+}
+body{
+    margin: 0px;
+}
+img{
+    height: 3.5rem;
+} 
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    color: white;
+}
+
+.nav-bar-top{
+    background-color: black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar-bottom a {
+    color: #999999;
+}
+.nav-bar-bottom{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ .column{
+    margin: 0px 10px;
+  
+}
+
+.right{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+div.column ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 0px 10px;
+}
+ul li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 350ms all;
+}
+li>a:hover{
+    color: #ff9933;
+} 
+.input-container{
+    margin: 5px 0px;
+}
+.input-container input[type="text"]{
+    outline: none;
+    border: 2px #f2f2f2 solid;
+    transition: 350ms all;
+}
+.input-container input[type="text"]:hover, .input-container input[type="text"]:focus{
+    border: 2px solid  #ff9933;
+}
+input[type="text"]{
+    height: 40px;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+
+.input-container input[type="submit"]{
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/search.png');
+    background-position: center;
+    background-size: contain;
+    border: none;
+    outline: none;
+    background-color:inherit;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+.icon {
+    display: inline-block;
+    background-size: cover;
+    margin-left: 20px;
+  }
+span{
+      width: 20px;
+      height: 20px;
+}
+.icon-button{
+    text-align: right;
+    margin: 16px 10px;
+    transition: 350ms all;
+}
+  .icon-like{
+    background-image: url('../img/like.svg');
+    transition: 350ms all;
+}
+.icon-like:hover, .icon-button:focus{
+    background-image: url('../img/like_hover.svg');
+}
+.icon-cart{
+    background-image: url('../img/cart.svg');
+    transition: 350ms all;
+}
+.icon-cart:hover, .icon-cart:focus{
+    background-image: url('../img/cart_hover.svg');
+}
+.dropbtn:hover, .dropbtn:focus{
+    color: #ff9933;
+}
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    display: inline-block;
+    padding-bottom: 20px;
+    transition: 350ms all;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 350ms all;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 350ms all;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover , .dropdown-content a:focus {background-color: #ff9933; color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {color: #ff9933;}
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    z-index: 1000;
+  }

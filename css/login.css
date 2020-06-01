@@ -1,0 +1,141 @@
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    flex-direction: row;
+}
+.main-register{
+    display: flex;
+    background-color: #f1f1f1;
+    flex-direction: row;
+}
+.login-area{
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+.login-form form{
+    display: initial;
+}
+.login-form button{
+    height: 30px;
+    width: 150px;
+    background-color: white;
+    color: #ff9933;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 350ms all;
+}
+.login-form button:focus, .login-form button:hover{
+    background-color: #ff9933;
+    color: white;
+}
+div.input-field{
+    display: block;
+}
+.input-field span{
+    margin-left: 5px;
+    color: red;
+}
+.input-field > p:last-child{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: red;
+}
+.input-field input{
+    width: 90%;
+    border: 1px #f2f2f2 solid;
+    outline: none;
+    height: 2.5rem;
+    padding-left: 5px;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: 350ms all;
+}
+.input-field input:hover, .input-field input:focus{
+    border: 1px #ff9933 solid;
+}
+
+.input-field input[type="checkbox"]{
+    width: initial;
+    height: initial;
+    padding-left: initial;
+    font-size: initial;
+    border-radius: initial;
+}
+.input-field input::placeholder{
+    text-align: left;
+}
+.input-field + p {
+    color: red;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#unhide{
+    width: 30px;
+    height: 30px;
+}
+.password{
+    display: flex;
+    align-items: center;
+}
+.login-method, .register {
+    display: flex;
+    color: white;
+    font-size: 24px;
+    margin: 10px 0px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 210px;
+    height: 50px;
+}
+.login-method img{
+    padding-top: 15px;
+    margin-right: 5px;
+    height: 30px;
+}
+.orLoginWith > p{
+    font-size: 14px;
+    color: #999999;
+}
+.login-method > p{
+    margin: 10px;
+}
+#fb{
+    background-color: #0066cc;
+}
+#gg{
+    background-color: red;
+}
+.address{
+    padding-left: 20px;
+}
+.city-address,.district-address{
+    margin-bottom:15px;
+}
+.register {
+    background-color: white;
+    transition: 350ms all;
+
+}
+.register > a{
+    color: #ff9933;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.register:hover, .register:focus{
+    background-color: #ff9933;
+}
+.register:hover a{
+    color: white;
+}
+.image{
+    margin-right: 50px;
+}
+.image img{
+    width: 500px;
+    height: 100%;
+}

@@ -1,0 +1,150 @@
+.cart-area{
+    margin-left: 10px;
+    background-color: #f1f1f1;
+    padding-bottom: 50px ;
+}
+.cart-area >h2{
+    color: #ff9933;
+}
+.main-cart{
+    display: flex;
+    flex-direction: row;
+}
+.cart-List {
+    min-width: calc(100% - 30%);
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 10px 0px;
+}
+.product > p{
+    margin-left: 600px;
+    margin-right: 5px;
+}
+.product a{
+    color: #1a75ff;
+    transition: 350ms all;
+}
+.product a:hover{
+    /* animation-name: product;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards; */
+    color: #ff9933;
+}
+
+.product > img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+.pay{
+    margin-left: 30px;
+}
+.price{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.price p > span{
+    text-align: right;
+    color: #ff9933;
+    font-size: 24px;
+    margin-left: 100px;
+    margin-right: 5px;
+}
+.price > p:last-child{
+    display: flex;
+    justify-self: flex-end;
+    font-size: 13px;
+}
+.pay-button{
+    font-size: 24px;
+    border: 4px solid white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    transition: 350ms all;
+}
+.pay-button > button{
+    text-align: center;
+    color: #ff9933;
+    transition: 350ms all;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    outline: none;
+}
+.pay-button:hover{
+    /* animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+    background-color: #ff9933;
+    border: 4px solid #ff9933;
+}
+.pay-button:hover > button{
+    /* animation-name: pay;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards; */color: white;
+    background-color: #ff9933;
+}
+.infor-product > button {
+    outline: none;
+    border: 1px #ff9933 solid;
+    margin: 10px 0px;
+    background-color: white;
+    border-radius: 4px;
+    color: #ff9933;
+    transition: 300ms ease;
+}
+.infor-product > button:hover{
+    background-color: #ff9933;
+    color: white;
+}
+.popup {
+    
+    position: fixed;
+    height: 175px;
+    width: 600px;
+    background:#ff9933;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 350ms ease-in-out;
+    z-index: 1;
+}
+.content{
+    margin: 0px 5px;
+}
+.content > h1{
+    color:white;
+    text-align: center;
+}
+
+
+.popup.active{
+    opacity: 1;
+    visibility: visible;
+}
+.popup__button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.popup__button >a {
+    color: white;
+    margin: 10px 10px;
+    transition: 350ms all;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.popup__button >a:hover{
+    font-weight: bold;
+}

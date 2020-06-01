@@ -1,0 +1,28 @@
+.user-order >h3{
+    color: #ff9933;
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.product > p{
+    margin-left: 600px;
+    margin-right: 5px;
+}
+.product a{
+    color:#ff9933;
+    transition: 350ms all;
+
+}
+.product a:hover{
+    animation-name: product;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.product > img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}

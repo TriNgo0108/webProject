@@ -1,0 +1,50 @@
+
+.user-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.input-field{
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.address{
+    padding-left: 15px;
+}
+.address select{
+    width: 100%;
+    height: 34px;
+}
+.address label{
+    width: 200px;
+}
+.city-address,.district-address,.street-address{
+    margin: 0px 0px 15px;
+    display: flex;
+    
+}
+.user-info input{
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 5px;
+    font-size: 16px;
+    border: 2px solid #f2f2f2;
+    border-radius: 4px;
+    transition: 350ms all;
+}
+.user-info input[type="submit"]:hover{
+    /* animation-name: changeButtonBackground;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+    background-color: #ff9933;
+        color: white;
+}
+
+/* @keyframes changeButtonBackground{
+    from{
+        background-color:#f1f1f1;
+    }
+    to{
+        background-color: #ff9933;
+        color: white;
+    }
+} */

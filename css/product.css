@@ -1,0 +1,93 @@
+body{
+    background-color: #f1f1f1;
+}
+.main{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.product{
+    margin: 20px;
+    display: flex;
+}
+.product img{
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    object-fit: contain;
+}
+.detail {
+    min-width: calc(100% - 310px);
+}
+.name,.price,.about,.Synopsis{
+    border-bottom: 2px solid #f1f1f1;
+    margin-right: 10px;
+}
+.detail >.form{
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+}
+#like, .like{
+    border: none;
+    background-color:white;
+    outline: none;
+}
+.form input[type="hidden"]{
+    display: none;
+}
+.form input[type="button"], .form > a{
+    border: 2px solid #ff9933;
+    background-color: white;
+    color: #ff9933;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    transition: 350ms all;
+}
+.form input[type="button"]:hover,.form > a:hover{
+    background-color: #ff9933;
+    color: white;
+
+}
+.form input[type="number"]{
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+.amount{
+    margin-right: 20px;
+}
+.amount button {
+    border: 2px solid #ff9933;
+    background-color: #ff9933;
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    height: 100px;
+    width: 500px;
+    background:#ff9933;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 350ms ease-in-out;
+}
+.popup > h1{
+    color:white;
+    text-align: center;
+}
+
+
+.popup.active{
+    opacity: 1;
+    visibility: visible;
+}

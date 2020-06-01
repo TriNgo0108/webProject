@@ -1,0 +1,39 @@
+.Offer-area{
+    margin: 10px 0px;
+    padding: 0px 40px;
+}
+.newOffer{
+    background-image: url('../img/subscribe.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.text{
+    color: white;
+}
+.subscribe-form form{
+    width: 100%;
+}
+.subscribe-form input{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-size:24px;
+    border: none;
+    outline: none;
+}
+.subscribe-form button{
+    height: 50px;
+    width: 50%;
+    border-radius: 15px;
+    background-color: white;
+    color: #ff9933;
+    border: none;
+    transition: 350ms all;
+}
+.subscribe-form button:hover, .subscribe-form button:focus{
+    background-color: #ff9933;
+    color: white;
+}

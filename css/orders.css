@@ -1,0 +1,18 @@
+.user-order{
+    background-color: white;
+}
+.order-list{
+    margin-left: 10px;
+}
+.user-order >h3{
+    margin-left: 5px;
+    color: #ff9933;
+}
+.order-list  tbody td{
+    padding: 10px 70px 10px 0px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.order-list th, .order-list td{
+    text-align: left;
+}

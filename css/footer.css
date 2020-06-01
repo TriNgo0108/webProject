@@ -1,0 +1,32 @@
+.footer-area{
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+.footer-top,.payment-method,.social-network{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.footer-top h4{
+    margin-bottom: 15px;
+}
+.helpCustomer,.aboutUs,.payment,.connectWithUs{
+    margin-left: 47px;
+}
+.payment h4, .connectWithUs h4{
+    text-align: center;
+}
+.payment-method img,.social-network img{
+    margin: 0px 10px;
+    
+}
+#color{
+    color: red;
+}
+.footer-bottom{
+    margin-top: 50px;
+}
+.footer-bottom span, .footer-bottom p:last-child{
+    font-weight: bold;
+}

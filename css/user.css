@@ -1,0 +1,133 @@
+.main-user{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 20px 0px;
+    align-content: space-around;
+    
+    
+}
+.active{
+    background-color: white;
+    
+}
+.active > a{
+    color: #ff9933 !important; 
+    animation-name: none !important;
+}
+.user-action,.user-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.user-action{
+    padding-right: 40px;
+    padding-bottom: 20px;
+    
+}
+.user-name > p:last-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+.user-info{
+    background-color: white;
+}
+.user-info form{
+    display: inline;
+    
+}
+
+.user-info > h3, .user-name > p{
+    color: #ff9933;
+}
+.user-info > h3{
+    margin-left: 10px;
+}
+
+.element {
+    margin: 10px 10px 10px 40px;
+}
+.element > label{
+    margin: 20px 0px;
+}
+.element input{
+    margin-top: 5px;
+    border: 3px solid #f2f2f2;
+    width: 500px;
+    height: 2.5rem;
+    padding-left: 5px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+/* .element input[type="email"]{
+    height: 2.5rem;
+    padding-left: 5px;
+    font-size: 16px;
+    border-radius: 15px;
+} */
+.link ul {
+    padding: 0px;
+}
+.link ul >li{
+    list-style-type: none;
+}
+.user-list{
+    margin: 10px 0px;
+    display: flex;
+
+}
+.user-list > img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    text-align: left;
+}
+.user-list > a{
+    padding-top: 5px;
+    color: initial;
+}
+.user-list:hover {
+    animation-name: changeBackGround;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+.user-list:hover > a{
+    animation-name: changeColor;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+.element input[type="submit"]:hover{
+    animation-name: changeButton;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes changeButton{
+    from{
+        background-color: #f1f1f1;
+
+    }
+    to{
+        background-color: #ff9933;
+        color: white;
+    }
+}
+@keyframes changeBackGround{
+    from{
+        background-color: #f1f1f1;
+    }
+    to{
+        background-color: white;
+    }
+}
+@keyframes changeColor{
+    from{
+        color: black;
+    }
+    to {
+        color: #ff9933;
+    }
+}

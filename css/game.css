@@ -1,0 +1,114 @@
+.game-area{
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+}
+.result h2 , .result h3{
+    color: #ff9933;
+}
+.type p{
+    margin: 15px;
+    font-size: 24px;
+    color: #ff9933;
+
+}
+.type > a{
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    width: 125px;
+    color: black;
+    padding-left: 5px;
+    transition: 350ms all;
+}
+.type >a:hover{
+    /* animation-name: changecolor;
+    animation-duration: 0.5s;
+    animation-fill-mode: both; */
+    color: #ff9933;
+}
+hr{
+    border: 1px solid white;
+    margin-left: 10px;
+}
+.result{
+    margin-left: 20px;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-width: calc(100% - 155px);
+}
+.game__wapper {
+    min-width: inherit;
+}
+.only{
+    width: fit-content !important;
+}
+.product-infor{
+    background-color: white;
+    display: inline-block;
+    margin: 5px 20px 5px 20px;
+    text-align: center;
+    width: 20%;
+    transition: 350ms all;
+    height: 450px;
+    position: relative;
+}
+.product-infor:hover{
+    /* animation-name: select;
+    animation-duration: 0.5s;
+    animation-fill-mode: both; */
+    color: #ff9933;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.product-infor:hover a,.product-infor:hover p{
+    /* animation-name: changecolor;
+    animation-duration: 0.5s;
+    animation-fill-mode: both; */
+    color: #ff9933;
+    
+}
+.product-image img{
+    padding-top:10px ;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+.product-name > a, .product-infor  p{
+    color:blue;
+}
+.page {
+    display: flex;
+    margin: 10px 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+.page > a{
+    color: #ff9933;
+    font-weight: bold;
+}
+.wapper {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+
+
+/* @keyframes changecolor{
+    from {color: black;}
+    to {}
+}
+@keyframes select{
+    from{
+        box-shadow: none;
+    }
+     to{
+       
+     }
+} */
+
