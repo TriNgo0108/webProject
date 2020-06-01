@@ -22,7 +22,7 @@ session_start();
 <body>
     <div class="main">
         <div class="popup">
-            <h1>Đã thêm sản phảm vào giõ hàng</h1>
+            <h1>Đã thêm sản phảm vào giỏ hàng</h1>
         </div>
         <div class="product">
             <?php
@@ -33,10 +33,13 @@ session_start();
             $stmt->bind_param('i', $pid);
             $stmt->execute();
             $result = $stmt->get_result();
+            
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
-                echo "<div class='image__wapper'>";
-                echo "<img src=\"$row[imageURL]\" alt=\"product\">";
+                echo "<div class='img-zoom-container'>";
+                echo "<div id='result' class='img-zoom-result'></div>";
+                echo "<div id='lens' class='img-zoom-lens'></div>";
+                echo "<img src=\"$row[imageURL]\" id='image' alt=\"product\">";
                 echo "</div>";
                 echo "<div class=\"detail\">";
                 echo "<div class=\"name\">";
@@ -109,10 +112,4 @@ session_start();
 <script src="./js/stickyNavBar.js"></script>
 <script src="./js/qualityButton.js"></script>
 <script src="./js/product.js"></script>
-<script>
-  
-
-
-
-</script>
 </html>

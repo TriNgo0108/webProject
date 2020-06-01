@@ -15,6 +15,7 @@ body{
     height: 300px;
     margin-right: 40px;
     object-fit: contain;
+    
 }
 .detail {
     min-width: calc(100% - 310px);
@@ -91,3 +92,40 @@ body{
     opacity: 1;
     visibility: visible;
 }
+.img-zoom-container{
+    position: relative;
+}
+.img-zoom-container:hover .img-zoom-lens ,.img-zoom-container:hover .img-zoom-result{
+    visibility: visible;
+    opacity: 1;
+    cursor: zoom-in;
+}
+
+  
+.img-zoom-lens {
+    z-index: 1;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .img-zoom-result {
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    left: 500px;
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 500px;
+    height: 400px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 2 10px 20px rgba(0,0,0,.2);
+    background-size: cover;
+
+  }
+ 
