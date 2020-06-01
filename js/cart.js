@@ -1,4 +1,4 @@
-var product = document.getElementsByClassName('product').length;
+let product = document.getElementsByClassName('product').length;
 //get length of product class
 const uid = Number (document.getElementById('uid').value);
 for (let i=0;i<product;i++){
@@ -14,7 +14,7 @@ for (let i=0;i<product;i++){
         // update database
         xmlhttpRequest.open('GET','./DB/deleteCart.php?uid='+uid+'&pid='+pid,true);
         xmlhttpRequest.send();
-
+        product = document.getElementsByClassName('product').length;
     });
  
 }
@@ -22,6 +22,7 @@ for (let i=0;i<product;i++){
 let popup = document.querySelector('.popup');
 //add eventListener for pay id 
 document.getElementById('pay').addEventListener('click',()=>{
+    console.log(product);
      if (product > 0){
         popup.classList.add('active');
         setTimeout(()=>{
