@@ -26,6 +26,7 @@
     border-radius: 10px;
     border: none;
     transition: 350ms all;
+    outline: none;
 }
 .login-form button:focus, .login-form button:hover{
     background-color: #ff9933;

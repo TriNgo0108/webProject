@@ -89,6 +89,11 @@ hr{
 }
 .page > a{
     color: #ff9933;
+    font-size: 18px;
+    height: 30px;
+    transition: 400ms all;
+}
+.page > a:hover {
     font-weight: bold;
 }
 .wapper {
