@@ -56,18 +56,15 @@ hr{
     transition: 350ms all;
     height: 450px;
     position: relative;
+    min-width: 258px;
 }
 .product-infor:hover{
-    /* animation-name: select;
-    animation-duration: 0.5s;
-    animation-fill-mode: both; */
+    
     color: #ff9933;
     box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 .product-infor:hover a,.product-infor:hover p{
-    /* animation-name: changecolor;
-    animation-duration: 0.5s;
-    animation-fill-mode: both; */
+    
     color: #ff9933;
     
 }
@@ -105,16 +102,4 @@ hr{
 }
 
 
-/* @keyframes changecolor{
-    from {color: black;}
-    to {}
-}
-@keyframes select{
-    from{
-        box-shadow: none;
-    }
-     to{
-       
-     }
-} */
 

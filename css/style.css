@@ -53,6 +53,7 @@ ul li a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: 350ms all;
+    text-align: left;
 }
 li>a:hover{
     color: #ff9933;
