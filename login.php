@@ -11,6 +11,7 @@ session_start();
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <link type="text/css" rel="stylesheet" href="./css/footer.css">
     <link type="text/css" rel="stylesheet" href="./css/login.css">
+    <link rel="icon" type="image/png" href="./img/icon.png">
     <title>Đăng nhập</title>
 </head>
 <header>

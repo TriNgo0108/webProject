@@ -13,6 +13,7 @@ session_start();
     <link type="text/css" rel="stylesheet" href="./css/footer.css">
     <link type="text/css" rel="stylesheet" href="./css/user.css">
     <link type="text/css" rel="stylesheet" href="./css/orders.css">
+    <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 <header>
     <?php

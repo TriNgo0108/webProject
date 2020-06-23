@@ -12,6 +12,7 @@ session_start();
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <link type="text/css" rel="stylesheet" href="./css/footer.css">
     <link type="text/css" rel="stylesheet" href="./css/product.css">
+    <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 <header>
     <?php

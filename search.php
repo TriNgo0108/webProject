@@ -13,6 +13,7 @@ session_start();
     <link type="text/css" rel="stylesheet" href="./css/footer.css">
     <link type="text/css" rel="stylesheet" href="./css/game.css">
     <link type="text/css" rel="stylesheet" href="./css/sildesImage.css">
+    <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 <header>
     <?php
