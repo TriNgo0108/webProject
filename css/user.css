@@ -61,6 +61,7 @@
     padding-left: 5px;
     font-size: 16px;
     border-radius: 15px;
+    transition: 350ms all;
 }
 /* .element input[type="email"]{
     height: 2.5rem;
@@ -68,6 +69,14 @@
     font-size: 16px;
     border-radius: 15px;
 } */
+.element input[type="text"]:hover,.element input[type="text"]:focus{
+    border: 3px #ff9933 solid;
+    outline: none;
+}
+.element input[type="email"]:hover,.element input[type="email"]:focus{
+    border: 3px #ff9933 solid;
+    outline: none;
+}
 .link ul {
     padding: 0px;
 }

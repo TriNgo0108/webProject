@@ -16,6 +16,7 @@ session_start();
 <header>
 <?php
         include 'navBar.php';
+        if(!isset($_SESSION['isLogin'])) header('Location: /webProject');
     ?>
 </header>
 

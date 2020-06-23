@@ -27,13 +27,10 @@ session_start();
         <?php
         require_once './DB/DBconfig.php';
         if (isset($_REQUEST['search'])){
-            if (isset($_COOKIE['keyword'])){
-                setcookie('keyword',$_REQUEST['search'],time()-1800);
-            }
             setcookie('keyword',$_REQUEST['search'],time()+1800);
             
         }
-        $keyword = $_COOKIE['keyword']?? '';// if $keyword is empty then set $keyword = '';
+        $keyword = $_REQUEST['search']?? $_COOKIE['search'];// if $keyword is empty then set $keyword = '';
         $sql = "call getCountSearch(?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('s', $keyword);

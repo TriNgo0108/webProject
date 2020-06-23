@@ -13,7 +13,9 @@
 .address select{
     width: 100%;
     height: 34px;
+    outline: none;
 }
+
 .address label{
     width: 200px;
 }
@@ -22,6 +24,15 @@
     display: flex;
     
 }
+.address select:hover, .address select:focus{
+    border: 1px #ff9933 solid;
+   
+}
+.address input[type="text"]:hover, .address input[type="text"]:focus{
+    border: 2px #ff9933 solid;
+   
+}
+
 .user-info input{
     width: 100%;
     height: 2.5rem;

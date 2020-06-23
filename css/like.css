@@ -15,11 +15,22 @@
     transition: 350ms all;
 
 }
-.product a:hover{
+.infor-product button {
+    background-color: white;
+    color: #ff9933;
+    border: 1px #ff9933 solid;
+    transition: 350ms all;
+    border-radius: 4px;
+}
+.infor-product button:hover {
+    color: white;
+    background-color: #ff9933;
+}
+/* .product a:hover{
     animation-name: product;
     animation-duration: 0.75s;
     animation-fill-mode: forwards;
-}
+} */
 
 .product > img{
     width: 100px;
