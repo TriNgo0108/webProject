@@ -68,6 +68,7 @@ session_start();
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo "<div class=\"product-infor\">";
+                    echo "<a href='./product.php?pid=$row[pid]'>";
                     echo "<div class=\"product-image\">";
                     echo "<img src=\"$row[imageURL]\" alt=\"product\">";
                     echo "</div>";
@@ -77,6 +78,7 @@ session_start();
                     echo "</p>";
                     echo "<p>".number_format($row['price'],3)." đ</p>";
                     echo "</div>";
+                    echo "</a>";
                     echo "</div>";
                 }
             } else {

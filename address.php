@@ -102,7 +102,7 @@ session_start();
                         </div>
                         <div class="street-address">
                             <label for="street">Tên đường</label>
-                            <input type="text" name="street" placeholder="Tên đường" value=<?php echo $_SESSION['street']?> >
+                            <input type="text" name="street" placeholder="Tên đường" value="<?php echo $_SESSION['street']?>" >
                             </label>
                         </div>
                     </div>
