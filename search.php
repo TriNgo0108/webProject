@@ -31,7 +31,7 @@ session_start();
             setcookie('keyword',$_REQUEST['search'],time()+1800);
             
         }
-        $keyword = $_REQUEST['search']?? $_COOKIE['search'];// if $keyword is empty then set $keyword = '';
+        $keyword = $_REQUEST['search']?? $_COOKIE['keyword'];// if $keyword is empty then set $keyword = '';
         $sql = "call getCountSearch(?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('s', $keyword);

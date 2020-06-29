@@ -66,6 +66,8 @@ body{
     border: 2px solid #ff9933;
     background-color: #ff9933;
     color: white;
+    outline: none;
+    cursor: pointer;
 }
 
 .popup {
